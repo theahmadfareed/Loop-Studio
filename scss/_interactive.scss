@@ -1,0 +1,31 @@
+/* =================   interactive starts   ================= */
+#interactive{
+    padding-top: 85px;
+    padding-bottom: 180px;
+
+    .interactive-text{
+        .text-1{
+            width: 570px;
+            position: absolute;
+            top: 185px;
+            right: -13px;
+            padding: 90px 0 30px 90px;
+            background: #fff;
+            h2{
+                color: #000;
+                font-family: $josefin;
+                font-weight: 300;
+                font-size: 46px;
+                display: flex;
+                flex-direction: column;
+            }
+            p{
+                font-family: $alata;
+                color: $dg;
+                font-size: 15px;
+                padding-right: 30px;
+            }
+        }
+    }
+}
+/* =================   interactive   ends   ================= */

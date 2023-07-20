@@ -1,0 +1,45 @@
+/* =================   navbar starts   ================= */ 
+.navbar{
+    position: absolute;
+    top: 50px;
+    z-index: 999999;
+    .navbar-nav{
+        .nav-item{
+            margin-left: 30px;
+            &:first-of-type{
+                margin-left: 0;
+                
+            }
+            .nav-link{
+                color: #fff;
+                font-family: $alata;
+                position: relative;
+                
+                &::after{
+                    content: '';
+                    width: 0;
+                    height: 2px;
+                    background: #fff;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -5px;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    @include trans2(0.4s);
+                }
+                
+                &:hover{
+                    &::after{
+                        width: 50%;
+                    }
+                }
+                
+            }
+            
+        }
+    }
+}
+/* =================   navbar   ends   ================= */ 
